@@ -9,7 +9,7 @@ const firebaseConfig = {
     measurementId: "G-3F3M1TC2JF",
     //databaseURL: "bytehustle-1-default-rtdb.firebaseio.com"
 };
- 
+  
 // Initialize Firebase
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
