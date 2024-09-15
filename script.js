@@ -1,5 +1,5 @@
 const firebaseConfig = {
-    apiKey: FIREBASE_API_KEY,
+    apiKey: process.env.FIREBASE_API_KEY,
     authDomain: "bytehustle-1.firebaseapp.com",
     databaseURL: "https://bytehustle-1-default-rtdb.firebaseio.com",
     projectId: "bytehustle-1",
