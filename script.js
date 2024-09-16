@@ -10,6 +10,7 @@ if (environment === 'development') {
 
 const script = document.createElement('script');
 script.src = configScript;
+script.type = 'module';
     script.onload = function () {
   // Your code that uses the configuration
   console.log('API Key:', script.firebaseConfig);
