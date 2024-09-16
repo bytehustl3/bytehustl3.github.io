@@ -16,8 +16,6 @@ script.type = 'module';
   console.log('API Key:', script.firebaseConfig);
 };
 
-document.head.appendChild(script);
-
 const firebaseConfig = {
     apiKey: "AIzaSyAFSZlgiHFUTTvhqAXIQTbOhPGNeeLYQQc",
     authDomain: "bytehustle-1.firebaseapp.com",
