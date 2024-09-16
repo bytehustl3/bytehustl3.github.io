@@ -15,6 +15,7 @@ script.src = configScript;
   console.log('API Key:', configScript.firebaseConfig);
 };
 
+document.head.appendChild(script);
 
 const firebaseConfig = {
     apiKey: "AIzaSyAFSZlgiHFUTTvhqAXIQTbOhPGNeeLYQQc",
