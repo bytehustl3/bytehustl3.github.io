@@ -12,7 +12,7 @@ const script = document.createElement('script');
 script.src = configScript;
     script.onload = function () {
   // Your code that uses the configuration
-  console.log('API Key:', configScript.firebaseConfig);
+  console.log('API Key:', script.firebaseConfig);
 };
 
 document.head.appendChild(script);
