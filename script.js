@@ -1,23 +1,6 @@
-// Determine environment (could be set by server or based on a variable)
-const environment = 'development'; // Or 'production'
-
-let configScript;
-if (environment === 'development') {
-  configScript = 'config.development.js';
-} else {
-  configScript = 'config.production.js';
-}
-
-const script = document.createElement('script');
-script.src = configScript;
-script.type = 'module';
-    script.onload = function () {
-  // Your code that uses the configuration
-  console.log('API Key:', script.firebaseConfig);
-};
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAFSZlgiHFUTTvhqAXIQTbOhPGNeeLYQQc",
+    apiKey: process.env.API_KEY,
     authDomain: "bytehustle-1.firebaseapp.com",
     databaseURL: "https://bytehustle-1-default-rtdb.firebaseio.com",
     projectId: "bytehustle-1",
